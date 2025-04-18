@@ -7,7 +7,7 @@
 
   @for(task of taksList; track task.id){
   <ul>
-    <li>{{ task.id }}</li>
+    <li>{{ task.id + 1 }}</li>
     <li>{{ task.name }}</li>
     <li><button (click)="deleteTask(task.id)">delete</button></li>
   </ul>
